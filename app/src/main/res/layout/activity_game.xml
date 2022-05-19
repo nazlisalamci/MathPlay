@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add"
+    android:orientation="vertical"
+    android:background="@drawable/backgroungame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:text="score :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:id="@+id/score"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+        <TextView
+            android:text="life :"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+        <TextView
+            android:id="@+id/life"
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+        <TextView
+            android:text="time :"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+        <TextView
+            android:id="@+id/time"
+            android:text="60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></TextView>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/quastion"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/en_koyu"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:background="@color/en_acik"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/en_acik"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/en_koyu"
+        android:textColor="@color/en_koyu"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@color/en_acik"
+            android:hint="Please enter your answer"
+            android:textColorHint="@color/en_koyu"
+            android:textColor="@color/en_koyu"
+            ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+    >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="20dp"
+            android:text="OK"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+
+            ></com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+           android:id="@+id/buttonnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="20dp"
+            android:text="NEXT QUESTION"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            app:icon="@drawable/ic_baseline_navigate_next_24"
+            app:iconGravity="end"
+            ></com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

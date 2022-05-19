@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="90dp"
+        app:cornerRadius="20dp"
+        android:text="ADDITION"
+
+        >
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSub"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        app:cornerRadius="20dp"
+        android:layout_margin="7dp"
+        android:text="SUBTRACTION"
+        >
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMulti"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        app:cornerRadius="20dp"
+        android:text="MULTIPLICATION"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+
+
+
+
+</LinearLayout>
